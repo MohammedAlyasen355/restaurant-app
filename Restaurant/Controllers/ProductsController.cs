@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using Restaurant.Models;
+using System.IO;
 
 namespace Restaurant.Controllers
 {
@@ -48,10 +49,13 @@ namespace Restaurant.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Name,Price,Image,CategoryID")] Product product)
+        public ActionResult Create(Product product, HttpPostedFileBase upload)
         {
             if (ModelState.IsValid)
             {
+                string path = Path.Combine(Server.MapPath("~/images/"), upload.FileName);
+                upload.SaveAs(path);
+                product.Image = upload.FileName;
                 db.Products.Add(product);
                 db.SaveChanges();
                 return RedirectToAction("Index");
