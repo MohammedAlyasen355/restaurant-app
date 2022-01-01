@@ -38,8 +38,11 @@
             @Html.DisplayNameFor(model => model.Image)
         </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Image)
+        <dd style="text-align: -webkit-center">
+            <img src="~/images/@Html.DisplayFor(model => model.Image)" 
+                 class="thumbnail" style="width:50%; height:50%" 
+                 alt="Alternate Text" 
+                 />
         </dd>
 
     </dl>
