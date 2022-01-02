@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -302,8 +303,9 @@ a.article, a.article:hover {
 }
 
 .product-bg {
-    background-image: url("~/images/back3.jpg");
+    background-image: url("../images/back3.jpg");
     /*background-size: 120%;*/
+    white-space:inherit
 }
 
 /* ---------------------------------------------------
@@ -397,6 +399,7 @@ a.article, a.article:hover {
 
     .row .show {
         max-height: 300px;
+        min-height: 200px;
         max-width: 300px;
         margin-bottom: 10px;
         border-radius: 10px;
@@ -421,22 +424,22 @@ a.article, a.article:hover {
         color: #828080;
         padding-top: 10px;
         float: left;
-        padding-left: 20px;
+        margin-left: 20px;
     }
 
     .list-image .price {
         float: right;
-        margin-right: 20px;
+        margin-right: 18px;
     }
 
     .list-image p {
         position: absolute;
-        right: 70px;
+        right: 130px;
         top: 270px;
     }
 
 .back img {
-    width: 102%;
+    width: 100%;
     border-radius: 10px;
     margin-bottom: 20px;
     max-height: 300px;
@@ -446,4 +449,8 @@ a.article, a.article:hover {
     position: absolute;
     right: 219px;
     top: 9px;
+}
+
+.row {
+    text-align: -webkit-center;
 }
