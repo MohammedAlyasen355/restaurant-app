@@ -46,7 +46,7 @@ namespace Restaurant.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Name")] Category category)
+        public ActionResult Create([Bind(Include = "ID,Name,Description")] Category category)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace Restaurant.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Name")] Category category)
+        public ActionResult Edit([Bind(Include = "ID,Name,Description")] Category category)
         {
             if (ModelState.IsValid)
             {
