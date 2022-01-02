@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Restaurant.Models.Product>
+
+@{
+    ViewBag.Title = "Lists";
+}
+
+<div class="wrapper" style="margin-top:-40px">
+    <div className="product-bg" id="content">
+        <div id="content">
+            <div class="row">
+                <div class="back col-sm-12">
+                    <img src="~/images/back3.jpg">
+                </div>
+                @foreach (var item in Model)
+                {
+                    <div class="list-image col-lg-3 col-md-4 col-sm-6">
+                        <img class="show"
+                             src="~/images/@Html.DisplayFor(modelItem => item.Image)"
+                             [alt]="p.title">
+                        <h4 class="name">
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </h4>
+                        <h4 class="price btn btn-danger active">
+                            @Html.DisplayFor(modelItem => item.Price)
+                        </h4>
+                        <a>
+                            <p class="click btn btn-info"> Click To Get </p>
+                        </a>
+                    </div>
+                }
+            </div>
+            <br>
+        </div>
+    </div>
+</div>

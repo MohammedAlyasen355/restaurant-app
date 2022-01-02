@@ -22,6 +22,7 @@ select,
 textarea {
     max-width: 280px;
 }
+
 body {
     padding-top: 50px;
     padding-bottom: 20px;
@@ -49,7 +50,7 @@ textarea {
 
 
 /*
-    My Design 
+    My Style 
 */
 
 body {
@@ -300,6 +301,11 @@ a.article, a.article:hover {
     transition: all 0.3s;
 }
 
+.product-bg {
+    background-image: url("~/images/back3.jpg");
+    /*background-size: 120%;*/
+}
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
@@ -347,7 +353,7 @@ a.article, a.article:hover {
 .navbar {
     display: flex;
 }
-/* end side bar */
+
 /*AdminNavbar*/
 .main-table {
     -webkit-box-shadow: 0 3px 10px #DDD;
