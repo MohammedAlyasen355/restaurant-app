@@ -25,7 +25,11 @@ namespace Restaurant.Models
 
         public virtual Category Category { get; set; }
 
-        public virtual ICollection<Order>  Orders { get; set; }
+        [ForeignKey("Order")]
+        [DisplayName("Order")]
+        public int OrderID { get; set; }
+
+        public virtual Order Order { get; set; }
 
     }
 }

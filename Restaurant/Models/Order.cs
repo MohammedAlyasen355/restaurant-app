@@ -10,20 +10,11 @@ namespace Restaurant.Models
     {
         public int ID { get; set; }
 
-        [ForeignKey("Invoice")]
-        public int InvoiceID { get; set; }
+        public int Quantity { get; set; }
 
-        [ForeignKey("User")]
-        public int UserID { get; set; }
-
-        [ForeignKey("Product")]
-        public int ProductID { get; set; }
-
-        public virtual Invoice Invoice { get; set; }
-
-        public virtual Product Product { get; set; }
-
-        public virtual User User { get; set; }
+        public virtual ICollection<User> Users { get; set; }
+        public virtual ICollection<Product> products { get; set; }
+        public virtual ICollection<Invoice> Invocies { get; set; }
 
     }
 }
