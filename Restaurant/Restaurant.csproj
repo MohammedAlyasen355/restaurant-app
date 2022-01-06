@@ -197,6 +197,10 @@
     <Compile Include="Migrations\202201011757261_Update-Category-Model.Designer.cs">
       <DependentUpon>202201011757261_Update-Category-Model.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202201061902034_Fix-Relations.cs" />
+    <Compile Include="Migrations\202201061902034_Fix-Relations.Designer.cs">
+      <DependentUpon>202201061902034_Fix-Relations.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Category.cs" />
@@ -329,6 +333,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202201011757261_Update-Category-Model.resx">
       <DependentUpon>202201011757261_Update-Category-Model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201061902034_Fix-Relations.resx">
+      <DependentUpon>202201061902034_Fix-Relations.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

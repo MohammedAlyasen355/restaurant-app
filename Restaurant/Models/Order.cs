@@ -13,7 +13,7 @@ namespace Restaurant.Models
         public int Quantity { get; set; }
 
         public virtual ICollection<User> Users { get; set; }
-        public virtual ICollection<Product> products { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
         public virtual ICollection<Invoice> Invocies { get; set; }
 
     }
